@@ -1,0 +1,98 @@
+:root{
+   --box-shadow: 0px 30px 30px rgba(57,56,61,0.205);
+   --shadow-color: 0px 15px 30px rgba(118,85,225,0.3);
+}
+
+
+.bradcrumb-item,.navbar{
+   background: transparent;
+}
+
+.navbar .navbar-brand{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 3.5rem;
+   margin-left: 2.5rem;
+}
+
+/* Start History */
+.history h2{
+   color: #2f2398;
+}
+.history p{
+   font-size: 15px;
+}
+/* End History  */
+
+
+/*  Vision-Mission */
+.values-area h2{
+   color: #2f2398;
+}
+.vision-mission-area .vision-mission{
+   background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    font-size: 18px;
+    color: #2f2398;
+    width: auto;
+    margin: 4rem .5rem;
+    transition: box-shadow .7s ease;
+}
+.vision-mission-area .vision-mission:hover{
+   box-shadow: var(--box-shadow);
+}
+/* End Vission-Mission */
+
+
+
+/* Start Values Area */
+.values-area .values{
+   background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 1rem;
+    font-size: 16px;
+    color:#2f2398;
+    width: auto;
+    margin: 1rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.values-area .values:hover{
+   box-shadow: var(--box-shadow);
+}
+
+/* End Values Area */
+
+
+/* Start Welfare Area */
+   .welfare-area .list-group{
+      font-size: 15px;
+   }
+  .welfare h2{
+      color: #2f2398;
+   }
+/* End Welfare Area */
+
+
+/* Start Brand-area */
+.brand-img{
+   width: auto;
+}
+.single-brand{
+   background: rgba(248, 252, 253, 0.973);
+   padding: 2rem 1rem;
+   width: auto;
+   margin: 1rem .5rem;
+   transition: box-shadow .7s ease;
+   
+}
+.single-brand:hover{
+   box-shadow: var(--box-shadow);
+}
+
+.brand-title h2{
+   color: #2f2398;
+}
+
+/* End Brand-area */
+
+
+/* Contact Us */

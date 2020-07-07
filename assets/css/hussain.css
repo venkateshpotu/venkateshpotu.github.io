@@ -1,0 +1,223 @@
+*{
+  --blues: #2279ca;
+}
+.wavei {
+   margin-top: -25%;
+}
+.waves {
+  position:relative;
+  width: 100%;
+  height: 15vh;
+  z-index: 5;
+}
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+.urgcard .card{
+  margin-left: 1%;
+}
+.urgcard .card .card-body .card-text i{
+  color: var(--blues);
+}
+.urgcard .card .card-body .row .col-5, .urgcard .card .card-body .row .col-4{
+  padding: 0 7px;
+}
+.urgcard .card-body .row h6{
+  color: #444;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px 0 0;
+}
+.urgcard .card-body .row span{
+  font-size: 13px;
+  margin: 0;
+  color: var(--blues);
+  font-weight: bold;
+}
+.raise1{
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 56;
+}
+.raise1 .totRaiseInPer{
+  background-color: var(--blues);
+  color: #fff;
+  padding: 2px 5px;
+  left: 75%;
+  top: -37px;
+  margin-left: -25px;
+}
+.raise1 .totRaiseInPer:after{
+  position: absolute;
+  content: '';
+  left: 10px;
+  bottom: -8px;
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid var(--blues);
+}
+.raise1 .progressRaise{
+  width: 100%;
+  background: #ccc;
+  height: 5px;
+}
+.raise1 .progressRaise span{
+  background: var(--blues);
+  height: 5px;
+  left: 0;
+}
+.cateBg{
+  background: url('../../ngoImage/mountain2.png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
+}
+.withShadow{
+  background: rgba(19, 19, 19, 0.61);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  z-index: -1;
+}
+.categor .card{
+  width: 32%;
+  box-shadow: 0 .5rem 1rem rgba(255,255,255,.1)!important;
+  margin: 0 1% 1.2% 0.2%;
+}
+.categor .card:hover{
+  box-shadow: 1px 1px 5px #727272 !important;
+}
+.categor .card img{
+  opacity: 0.5;
+}
+.categor .card .list-group-flush li{
+  background-color: var(--blues);
+  font-size: 13px;
+}
+.catData{
+  position: absolute;
+  left: 45%;
+  top: 39%;
+  transform: translate(-40%,-50%);
+  padding: 15px 0;
+  border-radius: 40px;
+}
+.catData1{
+  position: relative;
+  background: rgba(0, 0, 0, 0.61);
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+}
+.catData img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 35px;
+}
+.burgcard .card{
+  margin-left: 1%;
+  width: 20%;
+}
+.burgcard .card .card-body .card-text i{
+  color: var(--blues);
+}
+.burgcard .card .card-body .row .col-5, .burgcard .card .card-body .row .col-4{
+  padding: 0 7px;
+}
+.burgcard .card-body .row h6{
+  color: #444;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 5px 0 0;
+}
+.burgcard .card-body .row span{
+  font-size: 13px;
+  margin: 0;
+  color: var(--blues);
+  font-weight: bold;
+}
+
+@media (max-width: 730.99px) {
+  .urgcard .card .card-body .row .col-4, .urgcard .card .card-body .row .col-3 {
+    padding: 0px;
+  }
+  .urgcard .card .card-body .row .col-5{
+    padding: 0 0 0 7px;
+  }
+  .urgcard .card-body .row h6{
+    font-size: 13px;
+  }
+  .categor{
+    padding: 0;
+  }
+  .categor .card .list-group-flush li {
+      height: 45px;
+      font-size: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .burgcard .card .card-body .row .col-4, .burgcard .card .card-body .row .col-3 {
+    padding: 0px;
+  }
+  .burgcard .card .card-body .row .col-5{
+    padding: 0 0 0 7px;
+  }
+  .burgcard .card-body .row h6{
+    font-size: 13px;
+  }
+}
+@media (min-width: 731px) {
+  .categor .card{
+    width: 13%;
+  }
+  .wavei{
+  	margin-top: -7%;
+  }
+}
+@media (min-width: 768px) {
+  .wavei{
+  	margin-top: -8%;
+  }
+}
+@media (min-width: 812px) {
+  .wavei{
+  	margin-top: -6%;
+  }
+}
